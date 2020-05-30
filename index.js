@@ -30,6 +30,5 @@ assert(isPalindrome(101) == true);
 assert(isPalindrome(10101010101) == true);
 assert(isPalindrome("Madam") == true);
 assert(isPalindrome("Hai") == false);
-assert(isPalindrome(1202001) == false);
 assert(isPalindrome("Hello") == false);
 console.log("All test cases passed");
