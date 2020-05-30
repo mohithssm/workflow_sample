@@ -2,6 +2,9 @@ function isPalindrome(input){
     if(typeof input === 'string'){
         var input = input.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
     }
+    if(Number.isInteger(input) == true){
+        var input = input.toString();
+    }
     var c = 0;
     if(input==="") {
         return false;
@@ -26,6 +29,7 @@ function isPalindrome(input){
 }
 
 var assert = require("assert");
+assert(isPalindrome(10) == false);
 assert(isPalindrome(101) == true);
 assert(isPalindrome(10101010101) == true);
 assert(isPalindrome("Madam") == true);
