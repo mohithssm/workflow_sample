@@ -1,17 +1,23 @@
-function armstrong(x) {
-    var a=x,b,sum=0;
-    while(a>0) {
-        b=a%10;
-        sum+=(b*b*b);
-        a=parseInt(a/10);
+function is_perfect(number)
+{
+var temp = 0;
+   for(var i=1;i<=number/2;i++)
+    {
+        if(number%i === 0)
+        {
+            temp += i;
+        }
     }
-    if (sum===x) {
-        return "armstrong number";
-    } else {
-        return "not an armstrong number";
+    if(temp === number && temp !== 0)
+    {
+        return true;
     }
-}
+    else
+    {
+        return false;
+    }  
+} 
 var assert=require('assert')
-assert(armstrong(153),"testcase passed");
-assert(armstrong(5)===false,"testcase2 passed");
-console.log("all testcases passed");
+assert(is_perfect(28),"Testcase 1 passed");
+assert(is_perfect(5)===false,"Testcase 2 passed");
+console.log("All testcases passed");
