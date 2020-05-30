@@ -1,4 +1,4 @@
-name: 'Individual Function'
+name: 'Is Palindrome Function'
 runs:
   using: 'node12'
   main: 'index.js'
