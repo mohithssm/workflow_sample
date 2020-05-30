@@ -1,4 +1,4 @@
-name: 'Individual Function'
+name: 'Prime Factors'
 runs:
   using: 'node12'
   main: 'index.js'
