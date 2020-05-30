@@ -1,4 +1,4 @@
-
+// fibonacci
 function checkfibonacci(n)
         {
             let a = 0;
